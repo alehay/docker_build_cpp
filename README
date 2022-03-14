@@ -1,0 +1,2 @@
+docker build -t cpp_builder 
+docker run --name build-test --mount type=bind,source="$(pwd)"/scr_example,target=/scr cpp_builder
