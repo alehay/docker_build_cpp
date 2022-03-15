@@ -22,7 +22,7 @@
 
 создаем сборочный контейнер и монтируем к нему директории с сиходными файлами 
 
-    docker run build-test --mount type=bind,source="$(pwd)"/scr_example,target=/scr cpp_builder
+    docker run --name build-test --mount type=bind,source="$(pwd)"/scr_example,target=/scr cpp_builder
 
 имя build-test
 директория на хосте - source
